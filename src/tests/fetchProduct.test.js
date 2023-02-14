@@ -12,4 +12,9 @@ describe('Teste a função fetchProduct', () => {
     await fetchProduct('MLB1405519561');
     expect(fetch).toHaveBeenCalled();
   })
+
+  it('should call fetch with the correct endpoint when executed', async () => {
+    await fetchProduct('MLB1405519561');
+    expect(fetch).toHaveBeenCalledWith('https://api.mercadolibre.com/items/MLB1405519561')
+  })
 });
