@@ -24,6 +24,4 @@ const listItems = async () => {
   }
 };
 
-window.onload = () => {
-  listItems();
-};
+listItems();

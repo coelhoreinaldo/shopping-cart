@@ -4,7 +4,7 @@ import product from './mocks/product';
 
 // implemente seus testes aqui
 describe('Teste a função fetchProduct', () => {
-  it('...', () => {
-    
+  it('should be a function', () => {
+    expect(typeof fetchProduct).toBe('function');
   });
 });
