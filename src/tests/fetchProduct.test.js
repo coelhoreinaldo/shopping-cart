@@ -7,4 +7,9 @@ describe('Teste a função fetchProduct', () => {
   it('should be a function', () => {
     expect(typeof fetchProduct).toBe('function');
   });
+  
+  it('should call fetch when executed', async () => {
+    await fetchProduct('MLB1405519561');
+    expect(fetch).toHaveBeenCalled();
+  })
 });
