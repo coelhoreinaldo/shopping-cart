@@ -17,10 +17,15 @@ describe('Teste a função fetchProductsList', () => {
     await fetchProductsList('computador');
     expect(fetch).toHaveBeenCalledWith('https://api.mercadolibre.com/sites/MLB/search?q=computador')
   });
-  
+
   it('should have a return equal to computadorSearch object', async () => {
     const response = await fetchProductsList('computador')
     expect(response).toEqual(computadorSearch);
+  });
+  
+  it('should throw a error when out of arguments', async () => {
+    const response = await fetchProductsList()
+    expect(response).rejects.toThrow();
   });
 
   // it('...', () => {
