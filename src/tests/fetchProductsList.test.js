@@ -24,10 +24,7 @@ describe('Teste a função fetchProductsList', () => {
   });
   
   it('should throw a error when out of arguments', async () => {
-    const response = await fetchProductsList()
-    expect(response).rejects.toThrow();
+    const response = fetchProductsList()
+    await expect(response).rejects.toThrow('Termo de busca não informado');
   });
-
-  // it('...', () => {
-  // });
 });
