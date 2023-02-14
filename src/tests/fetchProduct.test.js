@@ -22,4 +22,9 @@ describe('Teste a função fetchProduct', () => {
     const response = await fetchProduct('MLB1405519561')
     expect(response).toEqual(product);
   });
+
+  it('should throw a error when out of arguments', async () => {
+    const response = fetchProduct()
+    await expect(response).rejects.toThrow('ID não informado');
+  });
 });
