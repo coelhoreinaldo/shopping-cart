@@ -1,7 +1,8 @@
 import { getSavedCartIDs } from './helpers/cartFunctions';
 import { searchCep } from './helpers/cepFunctions';
 import { fetchProduct, fetchProductsList } from './helpers/fetchFunctions';
-import { createProductElement, createCustomElement, createCartProductElement }
+import { createProductElement, createCustomElement, createCartProductElement,
+  updateTotalPrice }
   from './helpers/shopFunctions';
 import './style.css';
 
@@ -42,6 +43,7 @@ window.onload = () => {
       const olCartList = document.querySelector('.cart__products');
       olCartList.appendChild(productDom);
     });
+    updateTotalPrice();
   };
   getLocalStorageCartItems();
 };

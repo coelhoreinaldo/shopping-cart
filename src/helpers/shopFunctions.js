@@ -6,6 +6,31 @@ import { fetchProduct } from './fetchFunctions';
 
 // Fique a vontade para modificar o código já escrito e criar suas próprias funções!
 
+export const updateTotalPrice = () => {
+  const totalPrice = document.querySelector('.total-price');
+  const cart = document.querySelector('.cart__products');
+  const products = cart.querySelectorAll('.product__price__value');
+  let value = 0;
+  products.forEach((product) => {
+    value += Number(product.innerText);
+  });
+  console.log(value);
+  totalPrice.innerText = value;
+};
+
+// export const updateTotalPrice = () => {
+//   const totalPrice = document.querySelector('.total-price');
+//   const totalPriceNumber = Number(totalPrice.innerText);
+//   const cartItems = document.querySelectorAll('.cart__product');
+//   cartItems.forEach((item) => {
+//     const getPrice = item.querySelectorAll('.product__price__value');
+//     getPrice.forEach((value) => {
+//       const makeValueANumber = Number(value.innerText);
+//       totalPrice.innerHTML = (totalPriceNumber + makeValueANumber).toFixed(2);
+//     });
+//   });
+// };
+
 /**
  * Função responsável por criar e retornar o elemento de imagem do produto.
  * @param {string} imageSource - URL da imagem.
@@ -49,6 +74,7 @@ export const getIdFromProduct = (product) => (
 const removeCartProduct = (li, id) => {
   li.remove();
   removeCartID(id);
+  updateTotalPrice();
 };
 
 /**
@@ -127,9 +153,11 @@ export const createProductElement = ({ id, title, thumbnail, price }) => {
     const itemId = cartButton.parentNode.firstChild.innerText;
     saveCartID(itemId);
     const productData = await fetchProduct(itemId);
+
     const productDom = createCartProductElement(productData);
     const olCartList = document.querySelector('.cart__products');
     olCartList.appendChild(productDom);
+    updateTotalPrice();
   });
   return section;
 };
