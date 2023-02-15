@@ -34,11 +34,8 @@ window.onload = () => {
   const mapedItems = savedCart.map(async (id) => {
     const getProducts = await fetchProduct(id);
     return getProducts;
-    // const productDom = createCartProductElement(getProducts);
-    // const olCartList = document.querySelector('.cart__products');
-    // olCartList.appendChild(productDom);
   });
-  const xd = async () => {
+  const getLocalStorageCartItems = async () => {
     const promised = await Promise.all(mapedItems);
     promised.forEach((item) => {
       const productDom = createCartProductElement(item);
@@ -46,5 +43,5 @@ window.onload = () => {
       olCartList.appendChild(productDom);
     });
   };
-  xd();
+  getLocalStorageCartItems();
 };
