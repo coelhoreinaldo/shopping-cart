@@ -14,22 +14,8 @@ export const updateTotalPrice = () => {
   products.forEach((product) => {
     value += Number(product.innerText);
   });
-  console.log(value);
   totalPrice.innerText = value;
 };
-
-// export const updateTotalPrice = () => {
-//   const totalPrice = document.querySelector('.total-price');
-//   const totalPriceNumber = Number(totalPrice.innerText);
-//   const cartItems = document.querySelectorAll('.cart__product');
-//   cartItems.forEach((item) => {
-//     const getPrice = item.querySelectorAll('.product__price__value');
-//     getPrice.forEach((value) => {
-//       const makeValueANumber = Number(value.innerText);
-//       totalPrice.innerHTML = (totalPriceNumber + makeValueANumber).toFixed(2);
-//     });
-//   });
-// };
 
 /**
  * Função responsável por criar e retornar o elemento de imagem do produto.
