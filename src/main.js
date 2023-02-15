@@ -7,10 +7,10 @@ document.querySelector('.cep-button').addEventListener('click', searchCep);
 
 const sectionProducts = document.getElementById('products');
 const loadingSection = document.querySelector('#loading');
+const loading = createCustomElement('p', 'loading', 'carregando...');
 
 const listItems = async () => {
   try {
-    const loading = createCustomElement('p', 'loading', 'carregando...');
     loadingSection.appendChild(loading);
 
     const response = await fetchProductsList('computador');
@@ -18,6 +18,7 @@ const listItems = async () => {
 
     loadingSection.removeChild(loading);
   } catch (error) {
+    loadingSection.removeChild(loading);
     const errorMessage = 'Algum erro ocorreu, recarregue a página e tente novamente';
     const errorP = createCustomElement('p', 'error', errorMessage);
     loadingSection.appendChild(errorP);
