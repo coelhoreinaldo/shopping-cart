@@ -14,7 +14,7 @@ export const updateTotalPrice = () => {
   products.forEach((product) => {
     value += Number(product.innerText);
   });
-  totalPrice.innerText = value;
+  totalPrice.innerText = value.toFixed(2);
 };
 
 /**
