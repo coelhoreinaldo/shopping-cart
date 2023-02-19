@@ -18,9 +18,20 @@ Projeto construído utilizando HTML, CSS e Javascript.
 - Web Storage;
 - Metodologia TDD (Test Driven Development).
 
-## 🎯 Objetivos do projeto
+## 🛠️ Como executar o projeto?
 
-Praticar meus estudos de Forms, Flexbox, Mobile First e Frameworks.
+1. Instalando dependências
+
+`npm install`
+
+2. Executando os testes
+
+`npm test`
+
+3. Executando a aplicação
+
+`npm run dev`
+
 
 <!-- Olá, Tryber!
 Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
