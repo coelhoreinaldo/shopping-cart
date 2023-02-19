@@ -13,6 +13,11 @@ Acesse [aqui](https://coelhoreinaldo.github.io/).
 
 Projeto construído utilizando HTML, CSS e Javascript.
 
+- Consumo de dados de APIs;
+- Renderização no DOM;
+- Web Storage;
+- Metodologia TDD (Test Driven Development).
+
 ## 🎯 Objetivos do projeto
 
 Praticar meus estudos de Forms, Flexbox, Mobile First e Frameworks.
