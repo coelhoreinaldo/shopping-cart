@@ -1,4 +1,22 @@
-# :construction: README customizado em construção ! :construction:
+# 🛒 Shopping Cart
+
+Um carrinho de compras dinâmico. O usuário é capaz de:
+
+- Adicionar ou remover itens ao carrinho;
+- Manter as alterações no carrinho ao atualizar a página;
+- Consultar o valor total das compras;
+- Consultar o CEP onde serão entregados os produtos.
+
+Acesse [aqui](https://coelhoreinaldo.github.io/).
+
+## ⚛️ Ferramentas
+
+Projeto construído utilizando HTML, CSS e Javascript.
+
+## 🎯 Objetivos do projeto
+
+Praticar meus estudos de Forms, Flexbox, Mobile First e Frameworks.
+
 <!-- Olá, Tryber!
 Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
 
