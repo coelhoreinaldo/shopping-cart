@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import { getSavedCartIDs } from './helpers/cartFunctions.js';
 import { searchCep } from './helpers/cepFunctions.js';
 import { fetchProduct, fetchProductsList } from './helpers/fetchFunctions.js';
