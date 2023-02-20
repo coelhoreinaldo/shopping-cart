@@ -5,31 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Shopping Cart</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <script src="./src/main.js" type="module" defer></script>
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="container-title">
-        <img src="./src/imgs/logo.png" class="logo" alt="logo carrinho de compras">
+        <img
+          src="./src/imgs/logo.png"
+          class="logo"
+          alt="logo carrinho de compras"
+        />
       </div>
       <div class="container-cartTitle">
-        <i class="material-icons" style="font-size:35px;color: rgb(65, 25, 127);">shopping_cart</i>
+        <i
+          class="material-icons"
+          style="font-size: 35px; color: rgb(65, 25, 127)"
+          >shopping_cart</i
+        >
         <span class="cart__title">Meu carrinho</span>
       </div>
     </header>
-    <section id="loading">
-    </section>
+    <section id="loading"></section>
     <section class="container">
       <section class="products" id="products"></section>
       <section class="cart">
         <ol class="cart__products"></ol>
-        <p class="price">Subtotal <span>R$<span class="total-price">0</span></span></p>
-        <input type="text" class="cep-input" placeholder="Digite seu CEP">
+        <p class="price">
+          Subtotal <span>R$<span class="total-price">0</span></span>
+        </p>
+        <input type="text" class="cep-input" placeholder="Digite seu CEP" />
         <button class="cep-button cart-button">Buscar CEP</button>
         <span class="cart__address"></span>
       </section>

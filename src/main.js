@@ -10,7 +10,14 @@ document.querySelector('.cep-button').addEventListener('click', searchCep);
 
 const sectionProducts = document.getElementById('products');
 const loadingSection = document.querySelector('#loading');
-const loading = createCustomElement('p', 'loading', 'carregando...');
+const createImage = (className, src) => {
+  const e = document.createElement('img');
+  e.className = className;
+  e.src = src;
+  return e;
+};
+const loading = createImage('loading', '/src/imgs/logo.png');
+loading.className = 'animate__animated animate__rotateIn';
 
 const listItems = async () => {
   try {
@@ -19,9 +26,9 @@ const listItems = async () => {
     const response = await fetchProductsList('computador');
     response.forEach((item) => sectionProducts.appendChild(createProductElement(item)));
 
-    loadingSection.removeChild(loading);
+    loadingSection.style.display = 'none';
   } catch (error) {
-    loadingSection.removeChild(loading);
+    loadingSection.style.display = 'none';
     const errorMessage = 'Algum erro ocorreu, recarregue a página e tente novamente';
     const errorP = createCustomElement('p', 'error', errorMessage);
     loadingSection.appendChild(errorP);
