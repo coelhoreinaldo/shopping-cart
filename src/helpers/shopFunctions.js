@@ -1,5 +1,6 @@
-import { removeCartID, saveCartID } from './cartFunctions';
-import { fetchProduct } from './fetchFunctions';
+/* eslint-disable import/extensions */
+import { removeCartID, saveCartID } from './cartFunctions.js';
+import { fetchProduct } from './fetchFunctions.js';
 
 // Esses comentários que estão antes de cada uma das funções são chamados de JSdoc,
 // experimente passar o mouse sobre o nome das funções e verá que elas possuem descrições!

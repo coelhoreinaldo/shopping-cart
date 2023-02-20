@@ -5,7 +5,6 @@ import { fetchProduct, fetchProductsList } from './helpers/fetchFunctions.js';
 import { createProductElement, createCustomElement, createCartProductElement,
   updateTotalPrice }
   from './helpers/shopFunctions.js';
-import './style.css';
 
 document.querySelector('.cep-button').addEventListener('click', searchCep);
 
