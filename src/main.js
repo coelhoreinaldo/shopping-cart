@@ -16,7 +16,7 @@ const createImage = (className, src) => {
   e.src = src;
   return e;
 };
-const loading = createImage('loading', '/src/imgs/logo.png');
+const loading = createImage('loading', './src/imgs/logo.png');
 loading.className = 'animate__animated animate__rotateIn';
 
 const listItems = async () => {
