@@ -32,6 +32,9 @@ Projeto construído utilizando HTML, CSS e Javascript.
 
 `npm run dev`
 
+## 👥 Créditos
+
+O arquivo style.css foi escrito pela Trybe.
 
 <!-- Olá, Tryber!
 Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
