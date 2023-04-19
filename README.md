@@ -1,5 +1,7 @@
 # 🛒 Shopping Cart
 
+<img src='./images/shopping-cart.jpg' alt='shopping-cart' />
+
 Um carrinho de compras dinâmico. O usuário é capaz de:
 
 - Adicionar ou remover itens ao carrinho;
@@ -31,6 +33,10 @@ Projeto construído utilizando HTML, CSS e Javascript.
 3. Executando a aplicação
 
 `npm run dev`
+
+## 📝 Nota
+
+<img src='./images/grade.jpg' alt='nota final' />
 
 ## 👥 Créditos
 
